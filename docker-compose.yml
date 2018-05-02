@@ -1,0 +1,19 @@
+version: '3'
+services:
+  database:
+    image: postgres:10.3-alpine
+    ports:
+      - "5432:5432"
+    container_name: postgres_compose
+    environment: 
+      - POSTGRES_USER=sruehl
+      - POSTGRES_PASSWORD=mysecretpassword
+  pgadmin4:
+    image: fenglc/pgadmin4
+    ports:
+      - "5050:5050"
+    container_name: pgadmin_compose
+    environment: 
+      - DEFAULT_USER=sruehl
+      - DEFAULT_PASSWORD=mysecretpassword
+  
