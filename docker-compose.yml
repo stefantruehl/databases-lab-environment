@@ -4,16 +4,19 @@ services:
     image: postgres:10.3-alpine
     ports:
       - "5432:5432"
-    container_name: postgres_compose
+    # do not change! This data is hard coded in the pgadmin database file, in order to ensure that 
+    container_name: db-lab-postgres
     environment: 
-      - POSTGRES_USER=sruehl
-      - POSTGRES_PASSWORD=mysecretpassword
+      # do not change the credencials below, due to the same reson as above. 
+      - POSTGRES_USER=dbadmin
+      - POSTGRES_PASSWORD=dbadminpassword
   pgadmin4:
     image: fenglc/pgadmin4
     ports:
       - "5050:5050"
-    container_name: pgadmin_compose
+    container_name: db-lab-pgadmin
     environment: 
-      - DEFAULT_USER=sruehl
-      - DEFAULT_PASSWORD=mysecretpassword
+      # feel free to change them as you need.
+      - DEFAULT_USER=user
+      - DEFAULT_PASSWORD=secretpassword
   
