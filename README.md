@@ -1,4 +1,4 @@
-#Database Lab Environment
+# Database Lab Environment
 
 This is a very simple, quick, dirty, and ugly project that is supposed to help students to spin up a local database environment. This environnement can, for example be used to complete (most) lab exercises of my database lectures.
 
