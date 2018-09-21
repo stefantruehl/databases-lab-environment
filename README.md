@@ -40,7 +40,7 @@ Stops the containers for future use or removal.
 
 ### Remove stopped Containers from your Machine
 ````
-docker-compose stop
+docker-compose rm
 ````
 Once the containers are stopped, you can deleted them from your system. 
 
