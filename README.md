@@ -25,7 +25,7 @@ docker-compose up
 ````
 Will start the environment. The first time (or after you removed them from your system) the containers will be created, downloaded to your system and started. 
 Once the containers have started, you find the pgAdmin4 interface at [http://localhost:5050](http://localhost:5050). Use the following credentials to login:
-- **User:** user
+- **User:** user@domain.com
 - **Password:** secretpassword
 
 In pgAdmin you will already see your local PostgreSQL database ready to be used. 
@@ -61,7 +61,7 @@ For the **database** the standard credentials are:
 - **Password:** dbadminpassword
 
 For the **pgAdmin** the standard credentials are: 
-- **User:** user
+- **User:** user@domain.com
 - **Password:** secretpassword
 
 Please note: all above credentials are hard-coded into the deployment process. Thus, please don't change them (and, yes I know this is ugly).
