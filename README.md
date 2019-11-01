@@ -19,7 +19,7 @@ If you are familiar with the usage of Docker Compose you will not need this, but
 
 In order to use the environment, execute the following commands in the local folder where you cloned the repository. Please, acknowledge in most cases, all commands must be executed with root privileges. 
 
-### Start the Environment
+### Initial Start the Environment
 ````
 docker-compose up
 ````
@@ -37,6 +37,12 @@ docker-compose stop
 ````
 Stops the containers for future use or removal.
 
+
+### (Re-)Start the Environment
+````
+docker-compose start
+````
+Starts dormant the containers (containers that have previously run).
 
 ### Remove stopped Containers from your Machine
 ````
