@@ -1,0 +1,30 @@
+{
+    "Servers": {
+        "1": {
+            "Name": "Local Postgres",
+            "Group": "Servers",
+            "Port": 5432,
+            "Username": "dbadmin",
+            "PassFile": "pgpass",
+            "Host": "db-lab-postgres",
+            "SSLMode": "prefer",
+            "MaintenanceDB": "postgres",
+            "BGColor": "#000000",
+            "FGColor": "#009933",
+            "Comment": "This server is running on your local machine. "
+        },
+        "2": {
+            "Name":"FB I Central Server",
+            "Group": "Servers",
+            "Host": "postgres.fbi.h-da.de",
+            "HostAddr": "141.100.70.93",
+            "Port": 5432,
+            "MaintenanceDB": "Insert your st-accoutn here",
+            "Username": "Insert your st-accoutn here",
+            "SSLMode": "prefer",
+            "BGColor": "#000000",
+            "FGColor": "#0066ff",
+            "Comment": "Connection to the CS department's Postgres server. Make sure to insert your credencials. Details can be found here: https://code.fbi.h-da.de/lab-docs/db/-/wikis/postgresql/Zentraler-PostgreSQL-Servers"
+        }
+    }
+}

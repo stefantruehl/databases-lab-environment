@@ -1,5 +1,4 @@
+FROM dpage/pgadmin4:4.18
 
-FROM dpage/pgadmin4:4.6 
-#fenglc/pgadmin4:python3.6-alpine
-
-COPY bin/pgadmin4.db /var/lib/pgadmin/pgadmin4.db
+COPY servers.json /pgadmin4/servers.json
+COPY --chown=pgadmin:pgadmin pgpass /var/lib/pgadmin/storage/user_domain.com/pgpass
