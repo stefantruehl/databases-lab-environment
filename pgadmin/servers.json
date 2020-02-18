@@ -1,7 +1,7 @@
 {
     "Servers": {
         "1": {
-            "Name": "Local Postgres",
+            "Name": "Local Postgres Server",
             "Group": "Servers",
             "Port": 5432,
             "Username": "dbadmin",
