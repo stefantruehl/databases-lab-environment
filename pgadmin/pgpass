@@ -1,0 +1,1 @@
+db-lab-postgres:5432:*:dbadmin:dbadminpassword
