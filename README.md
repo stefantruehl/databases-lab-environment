@@ -2,7 +2,7 @@
 
 This is a very simple, quick, dirty, and ugly project that is supposed to help students to spin up a local database environment. This environnement can, for example be used to complete (most) lab exercises of my database lectures.
 
-In fact, it is simply a [Docker Compose file](https://docs.docker.com/compose/) (plus some dockerfile) that allows you to quickly spin up containers on your local machine.  
+In fact, it is simply a [Docker Compose file](https://docs.docker.com/compose/) (plus some dockerfile) that allows you to quickly build and spin up containers on your local machine.  
 
 The environment consists of:
 1. **PostgreSQL**: database server ([link-1](https://en.wikipedia.org/wiki/PostgreSQL), [link-2](https://www.postgresql.org/)).
@@ -60,7 +60,7 @@ If you want to connect another application to the database, you need to connect 
 
 ## Preconfigured User Credentials
 
-The following are the standard credentials that are hard coded into the deployment process. You may want to create additional credential once you use the environment 
+The following are the standard credentials that are hard coded into the deployment process. You may want to create additional credential once you use the environment.
 
 For the **database** the standard credentials are: 
 - **User:** dbadmin
@@ -70,7 +70,7 @@ For the **pgAdmin** the standard credentials are:
 - **User:** user@domain.com
 - **Password:** secretpassword
 
-Please note: all above credentials are hard-coded into the deployment process. Thus, please don't change them (and, yes I know this is ugly).
+Please note: all above credentials are hard-coded into the deployment process at several places. Thus, if you feel like changing the credencials be sure to exit them in all necessary places (and, yes I know this is ugly).
 
 ## Disclaimer
-This project is in a quick-and-dirty state. Hard-coded credentials are ugly, bad, and evil. However, I have not found a quick way of registering a database in a dynamic way. I may continue this in the future. 
+This project is in a quick-and-dirty state. Hard-coded credentials are ugly, bad, and evil. Enjoy!
