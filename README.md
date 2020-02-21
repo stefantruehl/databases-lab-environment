@@ -72,5 +72,40 @@ For the **pgAdmin** the standard credentials are:
 
 Please note: all above credentials are hard-coded into the deployment process at several places. Thus, if you feel like changing the credencials be sure to exit them in all necessary places (and, yes I know this is ugly).
 
+## Exchanging Files between Host and pgAdmin
+
+In the folder structure of this repository, there is place to exchange files (e.g. *.sql files) between the host and the pgAdmin container. 
+
+### Preparation 
+
+In order to have the **exchange-folder**-folder accessible from the pgAdmin container, you need to change the folders permissions.
+
+In Linux you do that by executing:
+````
+chmod 777 exchange-folder
+````
+
+In Windows you do that by executing:
+
+### Exchanging Files
+
+In the folder structure of this repository you find a folder called **exchange-folder**.
+Files in this folder can be accessed from both, the host and the pgAdmin container.
+
+If you want to store a SQL-Script in pgAdmin and access ist from the host, please save it as a file in the exchange folder. 
+This is done by clicking the save butten in the query tool. See screenshot:
+![Query Tool - Save Button](doc/query-tool.png)
+
+Make sure all files that you want to access from the host are sorted in the **/exchange-folder/**-folder. 
+
+See screenshot: 
+
+![Query Tool - Save as Dialog](doc/save-as.png)
+
+You will now be able to access the file within your host's file system. 
+
+
+Transfering files from the host to to pgAdmin works the same way. 
+
 ## Disclaimer
 This project is in a quick-and-dirty state. Hard-coded credentials are ugly, bad, and evil. Enjoy!
