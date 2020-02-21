@@ -14,10 +14,15 @@ services:
     ports:
       - "5050:5050"
     container_name: db-lab-pgadmin
+    volumes:
+      - ./exchange-folder:/var/lib/pgadmin/storage/user_domain.com/exchange-folder:rw
     environment: 
       - PGADMIN_DEFAULT_EMAIL=user@domain.com
       - PGADMIN_DEFAULT_PASSWORD=secretpassword
       - PGADMIN_ENABLE_TLS
       - PGADMIN_LISTEN_PORT=5050
+      
+volumes:
+  exchange-folder:
       
   
