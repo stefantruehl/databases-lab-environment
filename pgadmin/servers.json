@@ -8,7 +8,7 @@
             "PassFile": "pgpass-localdb",
             "Host": "db-lab-postgres",
             "SSLMode": "prefer",
-            "MaintenanceDB": "postgres",
+            "MaintenanceDB": "dbadmin",
             "BGColor": "#ffffff",
             "FGColor": "#000000",
             "Comment": "This server is running on your local machine. "
