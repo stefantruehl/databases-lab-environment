@@ -4,10 +4,8 @@ services:
     image: postgres:12.2-alpine
     ports:
       - "5432:5432"
-    # do not change! This data is hard coded in the pgadmin database file, to auto configure pg admin to access the postgresdb
     container_name: db-lab-postgres
     environment: 
-      # do not change the credencials below, due to the same reson as above. 
       - POSTGRES_USER=dbadmin
       - POSTGRES_PASSWORD=dbadminpassword
   pgadmin4:
@@ -17,9 +15,6 @@ services:
       - "5050:5050"
     container_name: db-lab-pgadmin
     environment: 
-      # do not change the credencials below, due to the same reson as above. 
-      #- DEFAULT_USER=user
-      #- DEFAULT_PASSWORD=secretpassword
       - PGADMIN_DEFAULT_EMAIL=user@domain.com
       - PGADMIN_DEFAULT_PASSWORD=secretpassword
       - PGADMIN_ENABLE_TLS
