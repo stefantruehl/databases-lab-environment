@@ -85,14 +85,13 @@ In Linux you do that by executing:
 chmod 777 exchange-folder
 ````
 
-In Windows you do that by executing:
 
 ### Exchanging Files
 
 In the folder structure of this repository you find a folder called **exchange-folder**.
 Files in this folder can be accessed from both, the host and the pgAdmin container.
 
-If you want to store a SQL-Script in pgAdmin and access ist from the host, please save it as a file in the exchange folder. 
+If you want to store a SQL-script in pgAdmin's query tool and access ist from the host, please save it as a file in the exchange folder. 
 This is done by clicking the save butten in the query tool. See screenshot:
 ![Query Tool - Save Button](doc/query-tool.png)
 
