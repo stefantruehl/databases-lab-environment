@@ -24,7 +24,7 @@
             "SSLMode": "prefer",
             "BGColor": "#ffffff",
             "FGColor": "#0066ff",
-            "Comment": "Connection to the CS department's Postgres server. Make sure to insert your credencials and be aware, that the server is only reachable on campus or through VPN. Details can be found here: https://code.fbi.h-da.de/lab-docs/db/-/wikis/postgresql/Zentraler-PostgreSQL-Servers"
+            "Comment": "Connection to the CS department's Postgres server. Make sure to insert your credencials and be aware, that the server is only reachable on campus or through VPN. Details can be found here: https://code.fbi.h-da.de/lab-docs/db/-/wikis/postgresql/Zentraler-PostgreSQL-Server"
         }
     }
 }
