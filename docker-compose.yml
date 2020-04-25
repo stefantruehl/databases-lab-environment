@@ -8,12 +8,10 @@ services:
     environment: 
       - POSTGRES_USER=dbadmin
       - POSTGRES_PASSWORD=dbadminpassword
-  pgadmin4:
-    build: ./pgadmin/
-    image: db-lab-pgadmin:4.18-1
+  db-lab-pgadmin4:
+    image: stefantruehl/db-lab-pgadmin4:4.20-1
     ports:
       - "5050:5050"
-    container_name: db-lab-pgadmin
     volumes:
       - type: bind
         source: ./exchange-folder
@@ -23,6 +21,7 @@ services:
       - PGADMIN_DEFAULT_PASSWORD=secretpassword
       - PGADMIN_ENABLE_TLS
       - PGADMIN_LISTEN_PORT=5050
+
       
 volumes:
   exchange-folder:
