@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   database:
-    image: postgres:12.2-alpine
+    image: postgres:14.1-alpine
     ports:
       - "5432:5432"
     container_name: db-lab-postgres
@@ -9,7 +9,7 @@ services:
       - POSTGRES_USER=dbadmin
       - POSTGRES_PASSWORD=dbadminpassword
   db-lab-pgadmin4:
-    image: stefantruehl/db-lab-pgadmin4:4.20-1
+    image: stefantruehl/db-lab-pgadmin4:6.2-1
     ports:
       - "5050:5050"
     volumes:
